@@ -193,3 +193,27 @@ ul{margin:0; padding:0; list-style:none}
   .nav a{padding:12px 0; border-bottom:1px solid var(--linha)}
   .sec{padding:56px 0}
 }
+
+/* ---------- Publicações ---------- */
+.pubs{counter-reset:pub; list-style:none; display:grid; gap:16px}
+.pubs li{
+  counter-increment:pub; position:relative;
+  background:var(--branco); border:1px solid var(--linha); border-radius:var(--raio);
+  padding:22px 24px 22px 62px; box-shadow:var(--sombra);
+}
+.pubs li::before{
+  content:counter(pub); position:absolute; left:22px; top:22px;
+  width:26px; height:26px; border-radius:50%; background:var(--verde-xcl); color:var(--verde);
+  font-size:.78rem; font-weight:700; display:flex; align-items:center; justify-content:center;
+}
+.pub-t{margin:0 0 8px; font-weight:600; font-size:.99rem; line-height:1.4}
+.pub-a{margin:0 0 6px; font-size:.86rem; color:var(--tinta-2)}
+.pub-a b{color:var(--verde)}
+.pub-v{margin:0; font-size:.86rem; color:var(--tinta-2); font-style:italic}
+.pub-l{
+  display:inline-block; margin-top:10px; font-size:.84rem; font-weight:600;
+  color:var(--verde); text-decoration:none; word-break:break-all;
+}
+.pub-l:hover{text-decoration:underline}
+.idiomas li{background:var(--verde-xcl); color:var(--verde)}
+@media (max-width:700px){ .pubs li{padding:20px; padding-top:52px} .pubs li::before{top:18px; left:20px} }
