@@ -1,0 +1,195 @@
+/* =========================================================
+   Portfólio Digital — Andrea Ferreira Turibio
+   CSS3 puro, sem bibliotecas externas.
+   ========================================================= */
+
+:root{
+  --verde:#0f5c4d;
+  --verde-cl:#17836d;
+  --verde-xcl:#e7f3f0;
+  --areia:#f7f6f2;
+  --tinta:#16201e;
+  --tinta-2:#4d5c58;
+  --linha:#dfe4e2;
+  --branco:#ffffff;
+  --sombra:0 1px 2px rgba(16,32,28,.05), 0 8px 24px rgba(16,32,28,.06);
+  --raio:14px;
+  --wrap:1120px;
+  --fonte:"Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth; scroll-padding-top:76px}
+body{
+  margin:0; font-family:var(--fonte); color:var(--tinta);
+  background:var(--branco); line-height:1.65; font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%; display:block}
+a{color:inherit}
+h1,h2,h3,h4{line-height:1.2; margin:0}
+ul{margin:0; padding:0; list-style:none}
+
+.wrap{width:100%; max-width:var(--wrap); margin:0 auto; padding:0 24px}
+.center{text-align:center}
+.skip{position:absolute; left:-9999px}
+.skip:focus{left:12px; top:12px; z-index:99; background:var(--verde); color:#fff; padding:10px 16px; border-radius:8px}
+
+/* ---------- Topo ---------- */
+.topbar{
+  position:sticky; top:0; z-index:50;
+  background:rgba(255,255,255,.88); backdrop-filter:saturate(160%) blur(10px);
+  border-bottom:1px solid var(--linha);
+}
+.topbar-in{display:flex; align-items:center; justify-content:space-between; height:64px}
+.brand{font-weight:800; font-size:1.25rem; letter-spacing:.06em; text-decoration:none; color:var(--verde)}
+.brand span{color:var(--verde-cl)}
+.nav{display:flex; gap:28px}
+.nav a{
+  text-decoration:none; font-size:.94rem; font-weight:500; color:var(--tinta-2);
+  padding:4px 0; border-bottom:2px solid transparent; transition:.18s;
+}
+.nav a:hover,.nav a.ativo{color:var(--verde); border-color:var(--verde)}
+.menu-btn{display:none; background:none; border:0; cursor:pointer; padding:8px; gap:5px; flex-direction:column}
+.menu-btn span{display:block; width:22px; height:2px; background:var(--tinta); border-radius:2px}
+
+/* ---------- Hero ---------- */
+.hero{padding:72px 0 64px; background:linear-gradient(180deg,var(--verde-xcl) 0%, #fff 100%)}
+.hero-in{display:grid; grid-template-columns:1.4fr .8fr; gap:56px; align-items:center}
+.eyebrow{
+  margin:0 0 14px; font-size:.75rem; font-weight:700; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--verde-cl);
+}
+.hero h1{font-size:clamp(2.1rem,5vw,3.1rem); letter-spacing:-.02em}
+.role{margin:10px 0 20px; font-weight:600; color:var(--verde); font-size:1.02rem}
+.lead{margin:0; color:var(--tinta-2); font-size:1.04rem; max-width:60ch}
+.center-t{margin:0 auto 32px}
+.cta{display:flex; gap:12px; margin-top:28px; flex-wrap:wrap}
+.btn{
+  display:inline-block; text-decoration:none; padding:12px 24px; border-radius:999px;
+  font-weight:600; font-size:.95rem; transition:.18s;
+}
+.btn-1{background:var(--verde); color:#fff}
+.btn-1:hover{background:var(--verde-cl); transform:translateY(-1px)}
+.btn-2{border:1.5px solid var(--linha); color:var(--tinta)}
+.btn-2:hover{border-color:var(--verde); color:var(--verde)}
+
+.foto-wrap{
+  position:relative; aspect-ratio:1/1; border-radius:24px; overflow:hidden;
+  background:var(--verde-xcl); border:1px solid var(--linha); box-shadow:var(--sombra);
+  display:flex; align-items:center; justify-content:center;
+}
+.foto-wrap img{width:100%; height:100%; object-fit:cover}
+.foto-ph{display:none; font-size:.8rem; color:var(--tinta-2); text-align:center; padding:16px}
+.foto-wrap.sem-foto .foto-ph{display:block}
+.foto-ph code{background:#fff; padding:2px 6px; border-radius:5px; font-size:.75rem}
+
+/* ---------- Seções ---------- */
+.sec{padding:76px 0}
+.sec-alt{background:var(--areia)}
+.sec-t{
+  font-size:clamp(1.4rem,3vw,1.9rem); letter-spacing:-.01em; margin-bottom:36px;
+  display:flex; align-items:baseline; gap:14px;
+}
+.sec-t span{font-size:.8rem; font-weight:700; color:var(--verde-cl); letter-spacing:.1em}
+.sec-t-c{justify-content:center}
+.sub{font-size:1.1rem; margin:44px 0 20px}
+
+.grid-3{display:grid; grid-template-columns:repeat(3,1fr); gap:20px}
+.grid-2{display:grid; grid-template-columns:repeat(2,1fr); gap:36px}
+.card{
+  background:var(--branco); border:1px solid var(--linha); border-radius:var(--raio);
+  padding:26px; box-shadow:var(--sombra);
+}
+.card h3{font-size:1.02rem; color:var(--verde); margin-bottom:10px}
+.card p{margin:0; color:var(--tinta-2); font-size:.94rem}
+
+/* ---------- Filtros ---------- */
+.filtros{display:flex; gap:10px; flex-wrap:wrap; margin-bottom:28px}
+.filtro{
+  border:1.5px solid var(--linha); background:var(--branco); color:var(--tinta-2);
+  padding:9px 20px; border-radius:999px; font:inherit; font-size:.9rem; font-weight:600;
+  cursor:pointer; transition:.18s;
+}
+.filtro:hover{border-color:var(--verde-cl); color:var(--verde)}
+.filtro.is-on{background:var(--verde); border-color:var(--verde); color:#fff}
+
+/* ---------- Projetos ---------- */
+.projetos{display:grid; grid-template-columns:repeat(2,1fr); gap:22px}
+.proj{
+  background:var(--branco); border:1px solid var(--linha); border-radius:var(--raio);
+  padding:26px; box-shadow:var(--sombra); display:flex; flex-direction:column;
+  animation:sobe .35s ease both;
+}
+@keyframes sobe{from{opacity:0; transform:translateY(10px)} to{opacity:1; transform:none}}
+.proj-top{display:flex; justify-content:space-between; align-items:flex-start; gap:12px; margin-bottom:6px}
+.proj h3{font-size:1.08rem}
+.selo{
+  flex:none; font-size:.7rem; font-weight:700; letter-spacing:.05em; text-transform:uppercase;
+  padding:4px 10px; border-radius:999px; background:var(--verde-xcl); color:var(--verde);
+}
+.selo.prof{background:#fdf0e3; color:#9a5b12}
+.selo.pess{background:#eaeefb; color:#33469b}
+.sem{font-size:.8rem; color:var(--tinta-2); font-weight:600; margin:0 0 14px}
+.desc{margin:0 0 16px; color:var(--tinta-2); font-size:.94rem}
+.contrib{
+  background:var(--verde-xcl); border-left:3px solid var(--verde-cl);
+  padding:14px 16px; border-radius:0 8px 8px 0; margin-bottom:16px;
+}
+.contrib b{display:block; font-size:.72rem; letter-spacing:.1em; text-transform:uppercase; color:var(--verde); margin-bottom:5px}
+.contrib p{margin:0; font-size:.92rem; color:var(--tinta)}
+.tags{display:flex; flex-wrap:wrap; gap:7px; margin-bottom:18px}
+.tags li{
+  font-size:.78rem; font-weight:600; padding:4px 11px; border-radius:6px;
+  background:#eef1f0; color:var(--tinta-2);
+}
+.proj-link{
+  margin-top:auto; text-decoration:none; font-weight:600; font-size:.9rem; color:var(--verde);
+  display:inline-flex; align-items:center; gap:7px;
+}
+.proj-link:hover{gap:11px}
+.proj-link.off{color:var(--tinta-2); pointer-events:none; opacity:.7}
+
+/* ---------- Listas / skills ---------- */
+.bloco h3{font-size:1.05rem; color:var(--verde); margin-bottom:16px}
+.tl li{padding:12px 0; border-bottom:1px solid var(--linha)}
+.tl li:last-child{border:0}
+.tl b{display:block; font-size:.96rem; font-weight:600}
+.tl span{font-size:.85rem; color:var(--tinta-2)}
+.skills{display:grid; grid-template-columns:repeat(3,1fr); gap:26px}
+.skill-g h4{font-size:.75rem; letter-spacing:.12em; text-transform:uppercase; color:var(--verde-cl); margin-bottom:12px}
+
+/* ---------- Contatos ---------- */
+.links{display:flex; gap:16px; justify-content:center; flex-wrap:wrap}
+.link-card{
+  display:flex; align-items:center; gap:14px; text-decoration:none; min-width:230px;
+  background:var(--branco); border:1px solid var(--linha); border-radius:var(--raio);
+  padding:18px 24px; box-shadow:var(--sombra); transition:.18s; text-align:left;
+}
+.link-card:hover{border-color:var(--verde); transform:translateY(-2px)}
+.link-card svg{width:24px; height:24px; fill:var(--verde); flex:none}
+.link-card span{display:flex; flex-direction:column; font-size:.86rem; color:var(--tinta-2)}
+.link-card b{font-size:.98rem; color:var(--tinta)}
+
+/* ---------- Rodapé ---------- */
+.rodape{background:var(--verde); color:#fff; padding:34px 0; text-align:center}
+.rodape p{margin:0; font-size:.9rem}
+.rodape .mini{opacity:.7; font-size:.8rem; margin-top:6px}
+
+/* ---------- Responsivo ---------- */
+@media (max-width:900px){
+  .hero-in{grid-template-columns:1fr; gap:36px}
+  .hero-foto{max-width:260px}
+  .grid-3,.grid-2,.projetos,.skills{grid-template-columns:1fr}
+  .skills{gap:22px}
+}
+@media (max-width:700px){
+  .menu-btn{display:flex}
+  .nav{
+    position:absolute; top:64px; left:0; right:0; background:#fff; flex-direction:column;
+    gap:0; border-bottom:1px solid var(--linha); display:none; padding:8px 24px 16px;
+  }
+  .nav.aberto{display:flex}
+  .nav a{padding:12px 0; border-bottom:1px solid var(--linha)}
+  .sec{padding:56px 0}
+}

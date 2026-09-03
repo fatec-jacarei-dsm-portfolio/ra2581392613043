@@ -1,11 +1,174 @@
-
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Portfólio - ANDREA FERREIRA TURIBIO</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Andrea Turibio — Portfólio Digital | DSM Fatec Jacareí</title>
+<meta name="description" content="Portfólio digital de Andrea Ferreira Turibio — Desenvolvimento de Software Multiplataforma, Fatec Jacareí.">
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <h1>Bem vindo ao Portfólio de ANDREA FERREIRA TURIBIO</h1>
+
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="topbar" id="topo">
+  <div class="wrap topbar-in">
+    <a class="brand" href="#topo">AT<span>.</span></a>
+    <nav class="nav" id="nav">
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#complementares">Formação</a>
+      <a href="#contatos">Contatos</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <!-- ============ APRESENTAÇÃO ============ -->
+  <section class="hero">
+    <div class="wrap hero-in">
+      <div class="hero-txt">
+        <p class="eyebrow">Portfólio Digital · Fatec Jacareí</p>
+        <h1>Andrea Ferreira Turibio</h1>
+        <p class="role">Desenvolvimento de Software Multiplataforma &nbsp;·&nbsp; Geotecnologias</p>
+        <p class="lead">
+          Sou tecnóloga em Geoprocessamento e atuo com sensoriamento remoto, cartografia e análise
+          espacial. Hoje curso Desenvolvimento de Software Multiplataforma na Fatec Jacareí para unir
+          dados geográficos e desenvolvimento de sistemas — construindo soluções que transformam
+          imagens de satélite e dados territoriais em informação útil.
+        </p>
+        <div class="cta">
+          <a class="btn btn-1" href="#projetos">Ver projetos</a>
+          <a class="btn btn-2" href="#contatos">Contatos</a>
+        </div>
+      </div>
+      <div class="hero-foto">
+        <div class="foto-wrap">
+          <img src="assets/img/foto.jpg" alt="Foto de Andrea Ferreira Turibio"
+               onerror="this.style.display='none';this.parentNode.classList.add('sem-foto')">
+          <span class="foto-ph">Adicione sua foto em<br><code>assets/img/foto.jpg</code></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SOBRE / OBJETIVOS ============ -->
+  <section id="sobre" class="sec">
+    <div class="wrap">
+      <h2 class="sec-t"><span>01</span> Objetivos e áreas de interesse</h2>
+      <div class="grid-3">
+        <article class="card">
+          <h3>Geotecnologia + Software</h3>
+          <p>Desenvolver aplicações web e desktop que consumam, processem e apresentem dados
+          geoespaciais — de APIs de imagens de satélite a mapas interativos.</p>
+        </article>
+        <article class="card">
+          <h3>Dados e classificação</h3>
+          <p>Aplicar aprendizado de máquina à classificação de uso e cobertura da terra,
+          detecção de desmatamento e de cicatrizes de incêndio.</p>
+        </article>
+        <article class="card">
+          <h3>Back-end e banco de dados</h3>
+          <p>Aprofundar em modelagem de dados, SQL e integração de bancos espaciais
+          (PostgreSQL/PostGIS) com aplicações multiplataforma.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJETOS ============ -->
+  <section id="projetos" class="sec sec-alt">
+    <div class="wrap">
+      <h2 class="sec-t"><span>02</span> Projetos</h2>
+
+      <div class="filtros" role="tablist" aria-label="Filtrar projetos">
+        <button class="filtro is-on" data-cat="todos">Todos</button>
+        <button class="filtro" data-cat="academico">Acadêmicos</button>
+        <button class="filtro" data-cat="profissional">Profissionais</button>
+        <button class="filtro" data-cat="pessoal">Pessoais</button>
+      </div>
+
+      <div class="projetos" id="listaProjetos"></div>
+    </div>
+  </section>
+
+  <!-- ============ COMPLEMENTARES ============ -->
+  <section id="complementares" class="sec">
+    <div class="wrap">
+      <h2 class="sec-t"><span>03</span> Informações complementares</h2>
+
+      <div class="grid-2">
+        <div class="bloco">
+          <h3>Formação acadêmica</h3>
+          <ul class="tl">
+            <li><b>Desenvolvimento de Software Multiplataforma</b><span>Fatec Jacareí · desde 2026</span></li>
+            <li><b>Pós-graduação em Engenharia Ambiental</b><span>UNINTER · 2024–2025</span></li>
+            <li><b>Tecnologia em Geoprocessamento</b><span>Fatec Jacareí · 2018–2020</span></li>
+          </ul>
+        </div>
+
+        <div class="bloco">
+          <h3>Produção científica</h3>
+          <ul class="tl">
+            <li><b>Publicações sobre desmatamento na Mata Atlântica</b><span>Metodologia PRODES / INPE</span></li>
+          </ul>
+          <h3 style="margin-top:1.6rem">Idiomas</h3>
+          <ul class="tl">
+            <li><b>Português</b><span>Nativo</span></li>
+            <li><b>Inglês</b><span>Leitura técnica</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 class="sub">Conhecimentos técnicos</h3>
+      <div class="skills">
+        <div class="skill-g">
+          <h4>Linguagens</h4>
+          <ul class="tags"><li>JavaScript</li><li>Python</li><li>R</li><li>SQL</li><li>HTML5</li><li>CSS3</li></ul>
+        </div>
+        <div class="skill-g">
+          <h4>Back-end e dados</h4>
+          <ul class="tags"><li>Node.js</li><li>Express</li><li>PostgreSQL</li><li>PostGIS</li><li>ETL</li><li>Git</li></ul>
+        </div>
+        <div class="skill-g">
+          <h4>Geotecnologias</h4>
+          <ul class="tags"><li>QGIS</li><li>ArcGIS</li><li>TerraAmazon</li><li>Google Earth Engine</li><li>Brazil Data Cube</li><li>SAR</li><li>GNSS</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTATOS ============ -->
+  <section id="contatos" class="sec sec-alt">
+    <div class="wrap center">
+      <h2 class="sec-t sec-t-c"><span>04</span> Contatos</h2>
+      <p class="lead center-t">Vamos conversar sobre dados, mapas e código.</p>
+      <div class="links">
+        <a class="link-card" href="https://github.com/DeaTuribio" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.5 3.17-1.18 3.17-1.18.63 1.59.24 2.76.12 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.4-5.26 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.2.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+          <span><b>GitHub</b>@DeaTuribio</span>
+        </a>
+        <a class="link-card" href="https://www.linkedin.com/in/andrea-turibio-41507467" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05a3.74 3.74 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zm1.78 13.02H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+          <span><b>LinkedIn</b>Andrea Turibio</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="rodape">
+  <div class="wrap">
+    <p>Andrea Ferreira Turibio · Desenvolvimento de Software Multiplataforma · Fatec Jacareí</p>
+    <p class="mini">Portfólio acadêmico — HTML5, CSS3 e JavaScript puro.</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
 </body>
 </html>
