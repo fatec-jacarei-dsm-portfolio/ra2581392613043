@@ -26,15 +26,17 @@ const PROJETOS = [
     tecnologias: ["HTML5", "CSS3", "JavaScript", "Node.js", "Express", "PostgreSQL", "JWT", "Git Flow", "Scrum"],
     link: "https://github.com/DEVassos/scrum-flow-abp"
   },
+  /* ---- ABP do 2DSM: descomente e preencha quando o projeto começar ----
   {
     categoria: "academico",
-    nome: "ABP 2DSM — [PREENCHER: nome do projeto integrador]",
+    nome: "ABP 2DSM — nome do projeto integrador",
     semestre: "2DSM – 2º Sem. 2026",
-    descricao: "[PREENCHER] Breve descrição do problema, do parceiro acadêmico e da solução entregue.",
-    contribuicao: "[PREENCHER] Sua contribuição individual, com o máximo de especificidade possível.",
-    tecnologias: ["PREENCHER"],
+    descricao: "Descrição do problema, do parceiro acadêmico e da solução entregue.",
+    contribuicao: "Sua contribuição individual, com o máximo de especificidade possível.",
+    tecnologias: ["tecnologia 1", "tecnologia 2"],
     link: ""
   },
+  ------------------------------------------------------------------- */
 
   /* ---------- ACADÊMICOS — Atividades de disciplina ---------- */
   {
