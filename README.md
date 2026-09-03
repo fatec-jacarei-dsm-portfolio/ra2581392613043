@@ -2,7 +2,7 @@
 
 **Aluno:** Andrea Ferreira Turibio
 **Curso:** Desenvolvimento de Software Multiplataforma
-**Turma:** 1º semestre de 2026
+**Turma:** 2º semestre de 2026
 
 ---
 
