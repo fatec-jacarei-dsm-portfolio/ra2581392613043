@@ -92,7 +92,7 @@ const PROJETOS = [
     semestre: "Desde abr. 2026",
     descricao: "Projeto de monitoramento por satélite do desmatamento no bioma Cerrado, seguindo a metodologia PRODES do Instituto Nacional de Pesquisas Espaciais.",
     contribuicao: "Atuo na interpretação de imagens de satélite e na identificação e vetorização de polígonos de desmatamento, aplicando os critérios metodológicos do projeto e realizando o controle de qualidade dos dados produzidos.",
-    tecnologias: ["TerraAmazon", "QGIS", "Sensoriamento remoto", "Análise espacial"],
+    tecnologias: ["TerraAmazon", "QGIS", "Sensoriamento remoto", "IA", "R", "Python","Análise espacial"],
     link: ""
   },
   {
