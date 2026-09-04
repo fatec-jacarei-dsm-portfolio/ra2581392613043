@@ -93,7 +93,7 @@ const PROJETOS = [
     descricao: "Projeto de monitoramento por satélite do desmatamento no bioma Cerrado, seguindo a metodologia PRODES do Instituto Nacional de Pesquisas Espaciais.",
     contribuicao: "Atuo na interpretação de imagens de satélite e na identificação e vetorização de polígonos de desmatamento, aplicando os critérios metodológicos do projeto e realizando o controle de qualidade dos dados produzidos.",
     tecnologias: ["TerraAmazon", "QGIS", "Sensoriamento remoto", "IA", "R", "Python","Análise espacial"],
-    link: ""
+    link: "https://terrabrasilis.dpi.inpe.br/"
   },
   {
     categoria: "profissional",
@@ -102,7 +102,7 @@ const PROJETOS = [
     descricao: "Mapeamento sistemático de uso e cobertura da terra e de mudanças na paisagem dos biomas brasileiros a partir de imagens de satélite.",
     contribuicao: "Interpretei imagens de satélite para classificação de uso e cobertura da terra e de mudanças na paisagem, produzi e validei dados vetoriais, e apliquei técnicas de classificação automática para apoiar a produção do mapeamento.",
     tecnologias: ["QGIS", "ArcGIS", "Google Earth Engine", "Python", "Sensoriamento remoto"],
-    link: ""
+    link: "https://biomas.funcate.org.br/"
   },
   {
     categoria: "profissional",
@@ -120,7 +120,7 @@ const PROJETOS = [
     nome: "Classificação de uso da terra na Mata Atlântica com R e sits",
     semestre: "2026",
     descricao: "Estudo de classificação de séries temporais de imagens Sentinel-2 (2020–2024) para a Mata Atlântica, usando a biblioteca sits e dados do Brazil Data Cube, com treinamento de modelo Random Forest.",
-    contribuicao: "Construí todo o fluxo em R: preparação das amostras em SIRGAS 2000, montagem do cubo de dados a partir do Brazil Data Cube, treinamento e avaliação do modelo Random Forest, e adaptação do fluxo para detecção de cicatrizes de incêndio e análise de recorrência de fogo.",
+    contribuicao: "Contribui com a construção de todo o fluxo em R: preparação das amostras em SIRGAS 2000, montagem do cubo de dados a partir do Brazil Data Cube, treinamento e avaliação do modelo Random Forest, e adaptação do fluxo para detecção de cicatrizes de incêndio e análise de recorrência de fogo.",
     tecnologias: ["R", "sits", "Brazil Data Cube", "Sentinel-2", "Random Forest"],
     link: ""
   },
@@ -129,7 +129,7 @@ const PROJETOS = [
     nome: "Plugin de download de imagens Sentinel-2 para QGIS",
     semestre: "2026",
     descricao: "Ferramenta em Python que consulta a API STAC do INPE, monta rasters virtuais (VRT) da coleção Sentinel-2 S2-16D-2 e carrega as camadas diretamente no QGIS.",
-    contribuicao: "Desenvolvi o script Python de consulta à API STAC, a geração dos VRTs e a interface em PyQt5 para seleção e carregamento das camadas no QGIS.",
+    contribuicao: "Participei do desenvolvimento do script Python de consulta à API STAC, a geração dos VRTs e a interface em PyQt5 para seleção e carregamento das camadas no QGIS.",
     tecnologias: ["Python", "PyQt5", "STAC API", "GDAL", "QGIS"],
     link: ""
   }
