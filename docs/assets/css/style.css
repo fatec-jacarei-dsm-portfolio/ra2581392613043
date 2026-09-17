@@ -143,8 +143,9 @@ ul{margin:0; padding:0; list-style:none}
   font-size:.78rem; font-weight:600; padding:4px 11px; border-radius:6px;
   background:#eef1f0; color:var(--tinta-2);
 }
+.proj-links{margin-top:auto; display:flex; gap:20px; flex-wrap:wrap; align-items:center}
 .proj-link{
-  margin-top:auto; text-decoration:none; font-weight:600; font-size:.9rem; color:var(--verde);
+  text-decoration:none; font-weight:600; font-size:.9rem; color:var(--verde);
   display:inline-flex; align-items:center; gap:7px;
 }
 .proj-link:hover{gap:11px}
