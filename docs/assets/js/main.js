@@ -124,8 +124,7 @@ const PROJETOS = [
     contribuicao: "Desenvolvi o projeto sozinha, do dado à interface. Em vez de hospedar os 71.586 polígonos de São Paulo, consumo o WMS público do TerraBrasilis filtrando por ano e por estado no servidor com CQL_FILTER, o que mantém o repositório leve e o mapa fluido. Medi o desempenho para escolher o tamanho do tile (512 px), alterno duas camadas WMS e pré-carrego o período seguinte para que a animação não pisque, e corrijo a cor dos polígonos por filtro CSS, já que o servidor ignora estilização dinâmica. Escrevi o gráfico de barras em SVG puro, sem biblioteca, e usei a média anual porque até 2016 o PRODES Mata Atlântica foi mapeado em intervalos plurianuais. Tudo em JavaScript puro, sem build e sem CDN, com o Leaflet embarcado e publicação no GitHub Pages.",
     tecnologias: ["HTML5", "CSS3", "JavaScript", "Leaflet", "WMS / WFS", "CQL_FILTER", "SVG", "GeoServer / TerraBrasilis", "Docker", "Nginx", "Sensoriamento remoto"],
     link: "https://github.com/DeaTuribio/Desmatamento-SP---s-rie-hist-rica",
-    /* Depois de ativar o GitHub Pages do repositório, cole a URL da aplicação em demo: */
-    demo: ""
+    demo: "https://deaturibio.github.io/Desmatamento-SP---s-rie-hist-rica/"
   },
   {
     categoria: "pessoal",
