@@ -12,6 +12,7 @@
      contribuicao: O QUE VOCÊ FEZ  (item mais importante da avaliação)
      tecnologias: lista de tecnologias
      link       : URL do repositório  (use "" se não houver)
+     demo       : URL da aplicação no ar  (opcional; use "" se não houver)
    ========================================================= */
 
 const PROJETOS = [
@@ -88,7 +89,7 @@ const PROJETOS = [
   /* ---------- PROFISSIONAIS ---------- */
   {
     categoria: "profissional",
-        nome: "Projeto BIOMAS-BR — PRODES Mata Atlântica / Cerrado — INPE",,
+    nome: "Projeto BIOMAS-BR — PRODES Mata Atlântica / Cerrado — INPE",
     semestre: "Desde abr. 2026",
     descricao: "Projeto de monitoramento por satélite do desmatamento no bioma Cerrado, seguindo a metodologia PRODES do Instituto Nacional de Pesquisas Espaciais.",
     contribuicao: "Atuo na interpretação de imagens de satélite e na identificação e vetorização de polígonos de desmatamento, aplicando os critérios metodológicos do projeto e realizando o controle de qualidade dos dados produzidos.",
@@ -115,6 +116,17 @@ const PROJETOS = [
   },
 
   /* ---------- PESSOAIS ---------- */
+  {
+    categoria: "pessoal",
+    nome: "Mata Atlântica paulista — mapa do desmatamento pelo PRODES",
+    semestre: "2026",
+    descricao: "Mapa web interativo do desmatamento da Mata Atlântica no estado de São Paulo entre 2000 e 2025, com os dados oficiais do PRODES/INPE. Traz linha do tempo animada pelos 17 períodos PRODES, consulta aos atributos do polígono pelo clique no mapa, gráfico de série histórica, ranking dos municípios mais desmatados e permalink do período selecionado.",
+    contribuicao: "Desenvolvi o projeto sozinha, do dado à interface. Em vez de hospedar os 71.586 polígonos de São Paulo, consumo o WMS público do TerraBrasilis filtrando por ano e por estado no servidor com CQL_FILTER, o que mantém o repositório leve e o mapa fluido. Medi o desempenho para escolher o tamanho do tile (512 px), alterno duas camadas WMS e pré-carrego o período seguinte para que a animação não pisque, e corrijo a cor dos polígonos por filtro CSS, já que o servidor ignora estilização dinâmica. Escrevi o gráfico de barras em SVG puro, sem biblioteca, e usei a média anual porque até 2016 o PRODES Mata Atlântica foi mapeado em intervalos plurianuais. Tudo em JavaScript puro, sem build e sem CDN, com o Leaflet embarcado e publicação no GitHub Pages.",
+    tecnologias: ["HTML5", "CSS3", "JavaScript", "Leaflet", "WMS / WFS", "CQL_FILTER", "SVG", "GeoServer / TerraBrasilis", "Docker", "Nginx", "Sensoriamento remoto"],
+    link: "https://github.com/DeaTuribio/Desmatamento-SP---s-rie-hist-rica",
+    /* Depois de ativar o GitHub Pages do repositório, cole a URL da aplicação em demo: */
+    demo: ""
+  },
   {
     categoria: "pessoal",
     nome: "Classificação de uso da terra na Mata Atlântica com R e sits",
@@ -151,6 +163,9 @@ function cartao(p){
   const link = p.link
     ? `<a class="proj-link" href="${escapar(p.link)}" target="_blank" rel="noopener">Ver repositório &rarr;</a>`
     : `<span class="proj-link off">Projeto sem repositório público</span>`;
+  const demo = p.demo
+    ? `<a class="proj-link" href="${escapar(p.demo)}" target="_blank" rel="noopener">Ver a aplicação &rarr;</a>`
+    : "";
 
   return `
     <article class="proj" data-cat="${p.categoria}">
@@ -165,7 +180,7 @@ function cartao(p){
         <p>${escapar(p.contribuicao)}</p>
       </div>
       <ul class="tags">${tags}</ul>
-      ${link}
+      <div class="proj-links">${demo}${link}</div>
     </article>`;
 }
 
