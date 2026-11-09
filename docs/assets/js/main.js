@@ -27,17 +27,17 @@ const PROJETOS = [
     tecnologias: ["HTML5", "CSS3", "JavaScript", "Node.js", "Express", "PostgreSQL", "JWT", "Git Flow", "Scrum"],
     link: "https://github.com/DEVassos/scrum-flow-abp"
   },
-  /* ---- ABP do 2DSM: descomente e preencha quando o projeto começar ----
+  /* ---- ABP do 2DSM----*/
   {
     categoria: "academico",
-    nome: "ABP 2DSM — nome do projeto integrador",
-    semestre: "2DSM – 2º Sem. 2026",
-    descricao: "Descrição do problema, do parceiro acadêmico e da solução entregue.",
-    contribuicao: "Sua contribuição individual, com o máximo de especificidade possível.",
-    tecnologias: ["tecnologia 1", "tecnologia 2"],
-    link: ""
+    nome: "EcoPulse — Observabilidade do impacto ambiental de software (ABP 2DSM)",
+    semestre: "2DSM – 2º Sem. 2026 · em desenvolvimento",
+    descricao: "Projeto Integrador da Fatec Jacareí com o parceiro UniLaunch: plataforma web de GreenOps que monitora aplicações e microsserviços e traduz métricas de infraestrutura (CPU, memória, disco e rede) em consumo de energia (kWh) e emissão estimada de carbono (gCO₂e), ponderada pela intensidade de carbono da região onde cada serviço está hospedado. Desenvolvido pela equipe DEVassos em sprints, sob a metodologia Scrum.",
+    contribuicao: "Atuo principalmente no front-end, com 54 commits até a Sprint 2. Montei o protótipo navegável no Figma (desktop e mobile, com login e cadastro), o guia de estilos e a integração dos tokens do design system ao Tailwind, além da troca para a paleta verde com verificação de contraste. Criei as rotas do dashboard e da área restrita, a tabela de serviços monitorados com busca, ordenação e região, os estados de carregando, erro e vazio, o cliente HTTP e o modo demonstração com backend falso. Implementei a atualização automática do dashboard sem recarregar a página (hook usePolling com pausa e cancelamento) e o selo de última atualização. No back-end, liberei o CORS para o dashboard e corrigi o arredondamento das métricas gravadas no PostgreSQL. Também documento o front-end e as variáveis de ambiente do projeto.",
+    tecnologias: ["React", "TypeScript", "Vite", "Tailwind CSS", "Node.js", "PostgreSQL", "Docker", "Figma", "Scrum"],
+    link: "https://github.com/DEVassos/ecopulse-app"
   },
-  ------------------------------------------------------------------- */
+ 
 
   /* ---------- ACADÊMICOS — Atividades de disciplina ---------- */
   {
